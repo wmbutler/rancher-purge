@@ -1,0 +1,10 @@
+version: '2'
+services:
+  rancher-purge:
+    image: wmbutler/rancher-purge
+    environment:
+      RANCHER_ACCESS_KEY: YOUR_RANCHER_ACCESS_KEY
+      RANCHER_SECRET_KEY: YOUR_RANCHER_SECRET_KEY
+      RANCHER_URL: http://rancher.cavo.io:8080/v2-beta/schemas
+      RANCHER_ENVIRONMENT: YOUR_RANCHER_ENVIRONMENT_ID
+      INTERVAL: 180
